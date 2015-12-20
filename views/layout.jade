@@ -1,7 +1,49 @@
 doctype html
 html
   head
+    meta(name="description" content="Inmobiliaria El Shaddai, buscamos las mejores opciones.")
+    meta(name="keywords" content="Inmobiliaria, Shaddai, proyecto, condominio, campestre, La Plata, Huila")
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" type="text/css" href="/css/bootstrap.min.css")
+    link(rel="stylesheet" type="text/css" href="/css/style.css")
+    script(type="text/javascript" src="/js/jquery-1.11.3.min.js")
+    script(type="text/javascript" src="/js/bootstrap.min.js")
+    block head
+    script(type="text/javascript" src="/js/script.js")
   body
-    block content
+    #contenido
+      nav.navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href="/")
+              img(src="/images/logo.png")
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right
+              li
+                a.active(href="/") INICIO
+              li
+                a(href="/sobreNosotros") SOBRE NOSOTROS
+              li
+                a(href="/proyectos") PROYECTOS
+              li
+                a(href="/servicios") SERVICIOS
+              li
+                a(href="/contacto") CONTACTO
+      #blockContent
+        block content
+      footer.footer
+        .izquierda
+          a(href="/") Inicio
+          a(href="/sobreNosotros") Sobre Nosotros
+          a(href="/proyectos") Proyectos
+          a(href="/servicios") Servicios
+          a(href="/contacto") Contacto
+        .derecha
+          img(src="/images/titulo.png")
