@@ -1,3 +1,11 @@
+/*Fuentes*/  
+  @font-face
+    font-family "SpeedballNo2NF-Bold"
+    src url("/fonts/SpeedballNo2NF-Bold.ttf") format("truetype")
+  @font-face
+    font-family "WorstveldSlingBoldOblique"
+    src url("/fonts/WorstveldSlingBoldOblique.ttf") format("truetype")  
+    
 /*Mixins*/
   buton-image(url,urlHover)
     .icon 
@@ -178,6 +186,166 @@
       color grey
       font-size 12px
 
+/*Sobre nosotros*/
+  #sobreNosotros
+    padding 5%
+    width 100%
+    float left
+    
+    h2 
+      width 100%
+      float left
+      text-align center
+      font-family SpeedballNo2NF-Bold
+      font-size 44px
+      color #337ab7
+      margin-bottom 5%
+    
+    div 
+      width 100%
+      margin 2% 0
+      
+      h3 
+        width 100%
+        float left
+        font-family SpeedballNo2NF-Bold
+        font-size 34px
+        color #4CAF50
+        
+      p
+        width 50%
+        float left
+        margin 1% 5%
+        color black
+        text-align justify
+        font-size 16px
+      
+      img 
+        width 20%
+        height 150px
+        float left
+        margin 1% 10%
+    
+    #objetoSocial
+      img
+        margin-top -5%
+    
+    #objetoSocial, #vision
+      h3
+        text-align left
+        padding-left 5%
+    
+    #mision 
+      h3 
+        text-align right
+        padding-right 5%
+      img
+        height auto
+  
+/*Proyectos*/
+  #proyectos 
+    width 100%
+    margin 5% 0
+    float left
+    
+    h2 
+      width 100%
+      margin 1% 0 3% 0
+      float left
+      font-family SpeedballNo2NF-Bold
+      text-align center
+      color #337ab7
+      font-size 54px
+    
+    a 
+      width 100%
+      float left
+      border-bottom 2px solid #4CAF50
+    
+      h2 
+        width 64%
+        margin 1% 1% 5% 1%
+        float left
+        font-family WorstveldSlingBoldOblique
+        font-size 34px
+        text-align right
+        color #4CAF50
+      img 
+        width 10%
+        float left
+    
+    a:hover
+      border-bottom 2px solid #337ab7
+      h2 
+        color #337ab7
+        
+/*mapa*/
+  #googleMap
+    width 80%
+    margin 5% 10%
+    height 500px
+    float left
+    border 2px solid #337ab7
+    border-radius 10px
+
+/*contacto*/
+  #contacto
+    margin 3%
+    h2
+      width 100%
+      margin 1% 0 3% 0
+      float left
+      font-family SpeedballNo2NF-Bold
+      text-align center
+      color #337ab7
+      font-size 34px
+    
+    #formulario
+      padding-top 5%
+      width 50%
+      margin auto
+      input::-webkit-input-placeholder
+        color grey
+      input:-moz-placeholder 
+        color grey
+      input::-moz-placeholder 
+        color grey
+      input:-ms-input-placeholder 
+        color grey
+      input
+        width 70%
+        margin 2% 15%
+        height 30px
+        border-left none
+        border-top none
+        border-right none
+        border-bottom 3px solid #4CAF50
+        text-align center
+        background none
+      textarea
+        background-color transparent
+        width 70%
+        margin 2% 15%
+        border 3px solid #4CAF50
+        text-align center
+      textarea::-webkit-input-placeholder
+        color grey
+      textarea:-moz-placeholder 
+        color grey
+      textarea::-moz-placeholder 
+        color grey
+      textarea:-ms-input-placeholder 
+        color grey
+      button
+        width 40%
+        margin 2% 30%
+        border 1.8px solid #4CAF50
+        text-align center
+        color white
+        background-color #4CAF50
+        height 25px
+        padding-top 3px
+
 /*Responsive*/
   @media (max-width:800px)
     nav img
@@ -191,6 +359,7 @@
 
         a
           padding 2% !important
+          font-size 50% !important
 
       .derecha
         width 30% !important
@@ -214,3 +383,13 @@
       div
         width 70% !important
         margin 2% 15% !important 
+    #sobreNosotros
+      div 
+        p 
+          width 100% !important
+          float left
+          padding-right 5% !important
+        img 
+          width 50% !important
+          float left
+          margin 1% 25%

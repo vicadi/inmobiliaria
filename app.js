@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var app = express();
 
 var pagina = require('./routes/pagina');
+var proyectos = require('./routes/proyectos');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -21,6 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', pagina);
+app.use('/proyectos', proyectos);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

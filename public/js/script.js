@@ -1,10 +1,12 @@
 $(document).ready(function() {
   //menu
-    $("ul.nav li a").on("click", function(){
-      $("ul.nav a").each(function(){
-        $(this).removeAttr("class");
-      });
-      $(this).attr("class","active");
+    $("ul.nav a").each(function(){
+      var dir=$(this).attr("dir");
+      if(window.location.pathname===dir){
+        $(this).attr("class","active");
+      }else{
+        $(this).removeAttr("class", "active");
+      }        
     });
   if(window.location.pathname=="/"){
     /*Cargar Slider*/
@@ -70,6 +72,5 @@ $(document).ready(function() {
         src= src.split("Hover")[0];
         $(this).attr("src",src+".png");
       });
-
   }
 });

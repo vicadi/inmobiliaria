@@ -1,4 +1,14 @@
 extends ../../../views/layout
 block head
 block content
-  h3 CONTACTO
+  #contacto
+    h2 ENVIANOS TU COMENTARIO O PETICION Y NOS PONDREMOS EN CONTACTO
+    #formulario
+      form(name="formContacto" method="POST" action="/correo")
+        input(type="text" name="nombre" placeholder="NOMBRE" required)         
+        input(type="text" name="telefono" placeholder="TELÉFONO")
+        input(type="email" name="email" placeholder="CORREO ELECTRONICO" required)
+        input(type="text" name="asunto" placeholder="ASUNTO" required)
+        textarea(rows="5" name="comentario" placeholder="COMENTARIO" required)
+        button.btn(type="submit")
+          b ENVIAR 
