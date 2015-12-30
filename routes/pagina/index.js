@@ -8,7 +8,7 @@ app.set('views',__dirname + '/views');
 app.route('/')
 .get(function(req, res){
   res.render('index', {
-    title : 'Inmobiliaria El Shaddai / Inicio'
+    title : 'Inmobiliaria El Shaddai'
   });
 });
 
