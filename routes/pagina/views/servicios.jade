@@ -1,4 +1,60 @@
 extends ../../../views/layout
 block head
 block content
-  h3 SERVICIOS
+  #servicios
+    h2 SERVICIOS
+    a
+      h2 VENTA DE BIENES INMUEBLES
+      img.casa(src="/images/casa.png")
+    .venta
+      h3 Finca Ganadera El Encanto
+      ul 
+        li 14 hect&aacute;reas
+        li Agua
+        li Corrales
+        li Establo 
+        li Casa
+        li Cultivos de: cacao, pl&aacute;tano, frutales
+        li Espacios para avicultura campestre
+        li A 7 minutos de La Plata Huila v&iacute; Neiva
+      a(onclick="$('#elEncanto').css('display','inherit');")
+        b IM&Aacute;GENES
+      #elEncanto.imagenes(style="display:none;")
+        img(src="/images/el_encanto/1.jpg")
+        img(src="/images/el_encanto/2.jpg")
+        img(src="/images/el_encanto/3.jpg")
+        img(src="/images/el_encanto/4.jpg")
+        img(src="/images/el_encanto/5.jpg")
+        img(src="/images/el_encanto/6.jpg")
+        img(src="/images/el_encanto/7.jpg")
+        img(src="/images/el_encanto/8.jpg")
+        img(src="/images/el_encanto/9.jpg")
+        img(src="/images/el_encanto/10.jpg")
+        img(src="/images/el_encanto/11.jpg")
+        img(src="/images/el_encanto/12.jpg")
+        img(src="/images/el_encanto/13.jpg")
+        img(src="/images/el_encanto/14.jpg")
+        img(src="/images/el_encanto/15.jpg")
+        img(src="/images/el_encanto/16.jpg")
+        img(src="/images/el_encanto/17.jpg")
+        img(src="/images/el_encanto/18.jpg")
+        img(src="/images/el_encanto/19.jpg")
+        a#aELEncanto(onclick="$('#elEncanto').css('display','none');") OCULTAR IM&Aacute;GENES
+    .venta
+      h3 Casa en Neiva - Huila
+      ul 
+        li 12 de Frente x 26 de Fondo
+        li 2 casas en 1
+        li 2 locales
+        li Barrio Las Palmas
+      a(onclick="$('#casaLasPalmas').css('display','inherit');")
+        b IM&Aacute;GENES
+      #casaLasPalmas.imagenes(style="display:none;")
+        img(src="/images/casa_las_palmas/1.jpg")
+        img(src="/images/casa_las_palmas/2.jpg")
+        img(src="/images/casa_las_palmas/3.jpg")
+        img(src="/images/casa_las_palmas/4.jpg")
+        img(src="/images/casa_las_palmas/5.jpg")
+        img(src="/images/casa_las_palmas/6.jpg")
+        img(src="/images/casa_las_palmas/7.jpg")
+        a(onclick="$('#casaLasPalmas').css('display','none');") OCULTAR IM&Aacute;GENES

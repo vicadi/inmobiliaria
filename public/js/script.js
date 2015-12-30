@@ -74,3 +74,18 @@ $(document).ready(function() {
       });
   }
 });
+
+function mostrar_oferta(){
+  $("#oferta").css("display","inherit");
+  $("#imagenes").css("display","none");
+}
+
+function mostrar_imagenes(){
+  $("#oferta").css("display","none");
+  $("#imagenes").css("display","inherit");
+}
+
+function subir(){
+  $("html, body").animate({ scrollTop: 0 }, 600);
+  return false;
+}
